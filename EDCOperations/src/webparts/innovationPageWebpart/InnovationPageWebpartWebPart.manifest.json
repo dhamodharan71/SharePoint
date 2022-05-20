@@ -1,0 +1,25 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "03993e94-2b4d-49f2-97ec-45095b67ab40",
+  "alias": "InnovationPageWebpartWebPart",
+  "componentType": "WebPart",
+
+  
+  "version": "*",
+  "manifestVersion": 2,
+
+  
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Other" },
+    "title": { "default": "InnovationPageWebpart" },
+    "description": { "default": "InnovationPageWebpart description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "InnovationPageWebpart"
+    }
+  }]
+}
