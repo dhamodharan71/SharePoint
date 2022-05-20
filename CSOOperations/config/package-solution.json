@@ -1,0 +1,18 @@
+{
+"solution": {
+"name": "CSOInnovation-page-client-side-solution",
+"id": "d805a933-bcc9-4e9f-9390-f4736b202990",
+"version": "1.0.0.11",
+"includeClientSideAssets": true,
+"developer": {
+    "name": "CSOInnovation-page-client-side-solution",
+    "websiteUrl": "",
+    "privacyUrl": "",
+    "termsOfUseUrl": "",
+    "mpnId": ""
+    }
+},
+"paths": {
+"zippedPackage": "solution/CSOInnovation-page.sppkg"
+}
+}

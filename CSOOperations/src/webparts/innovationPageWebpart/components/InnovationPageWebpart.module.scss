@@ -1,0 +1,602 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.innovationPageWebpart {
+width: 100%;
+display: inline-block;
+max-width: 100%;
+}
+.instructions{
+width: 100%;
+float: left;
+}
+.instructionsLeftDiv{
+width: 100%;
+float: left;
+}
+.instructionsRightDiv{
+clear: both;
+width: 100%;
+  margin-bottom: 4%;
+}
+textarea {
+resize: none;
+}
+.submitIdeaButton{
+background-color: blue;
+}
+.SPCanvas{
+width: 100%;
+max-width: 100%;
+}
+.GotAnIdea{
+  text-align: center;
+  background-color: #87BC40;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 69%;
+  float: left;
+  font-weight: 700;
+  height: 50px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px darkgrey;
+}
+.GotAnIdea:hover{
+text-decoration: underline;
+}
+.ideaSearchBar{
+color: black;
+width: 30%;
+float: right;
+border-radius: 100px;
+display: inline-flex;
+height: 50px;
+}
+.searchIcon{
+height: 40px;
+margin-top: 5px;
+margin-left: 5px;
+}
+.searchBar{
+width: 80% !important;
+  padding: 5px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 100px !important;
+  resize: vertical;
+  outline: none !important;
+}
+.searchpic{
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.tab {
+overflow: hidden;
+padding-top: 2%;
+width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab div {
+float: left;  
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 13px;
+width: 20%;
+border-bottom: 3px solid darkgray;
+color: #0696D7;
+}
+
+/* Change background color of buttons on hover 
+.tab div:hover {
+background-color: #C1F4F9;
+} */
+
+/* Create an active/current tablink class */
+.active {
+// background-color: #c1f4f9;
+border-bottom: none !important;
+border: 3px solid darkgray;
+border-radius: 2px;
+font-weight: bold;
+  color: black !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+width: 100%;
+display: none;
+border: 1px solid #ccc;
+border-top: none;
+height: 400px;
+overflow: auto;
+}
+.tabcontent1 {
+  width: 100%;
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  height: 400px;
+  overflow: auto;
+  }
+.tablinks{
+font-family: Arial, Helvetica, sans-serif;
+}
+.modal{
+FONT-WEIGHT : 500;
+display: none; /* Hidden by default */
+position: fixed;/* Stay in place */
+z-index: 13; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal1{
+  FONT-WEIGHT : 500;
+  display: none; /* Hidden by default */
+  position: fixed;/* Stay in place */
+  z-index: 13; /* Sit on top */
+  left: 50px;
+  top: 50px;
+  width: 70%; /* Full width */
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+.modalcontent{
+background-color: #fefefe;
+margin: auto;
+padding: 15px;
+border: 1px solid #888;
+width: 98%;
+border-radius: 5px;
+}
+.modalcontent1{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 98%;
+  border-radius: 5px;
+  }
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.modalcontent{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 98%;
+  border-radius: 5px;
+  }
+  .modalcontent1{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 98%;
+    border-radius: 5px;
+    }
+  .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+ 
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.submitform{
+display: flex;
+}
+.submitformButton{
+display: flex;
+}
+.SubmitformHeader{
+margin-bottom: 3%;
+}
+.submitform:after {
+content: "";
+display: table;
+clear: both;
+}
+.ColumnTitle{
+width: 40%;
+float: left;
+margin-top: 6px;
+flex: 1;
+padding: 1em;
+}
+.ColumnTitle2{
+  
+  width: 40%;
+  float: left;
+  margin-top: 6px;
+  flex: 1;
+  padding: 1em;
+  }
+.ColumnTitle1{
+  width: 40%;
+  float: left;
+  flex: 1;
+  }
+.AckRow{
+    width: 40%;
+    float: left;
+    flex: 1;
+    margin-left:3%;
+}
+.ColumnTitle3{
+  width: 40%;
+  float: left;
+  flex: 1;
+  margin-left:5%;
+}
+.ColumnTypes{
+width: 60%;
+float: left;
+margin-top: 6px;
+}
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+input[type=date] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-top: 6px;
+  resize: none;
+  }
+* {
+box-sizing: border-box;
+}
+.submitDataButton{
+background-color: #87BC40;
+color: black;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+margin-top: 10px;
+margin-left: 50%;
+}
+.editDataButton{
+background-color: #87BC40;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+margin-top: 10px;
+margin-left: 50%;
+display: none;
+}
+.mandatory{
+color: red;
+font-weight: bold;
+}
+.commentsWrapper{
+display: none;
+}
+div[class^="commentsWrapper_"]{
+display: none !important;
+}
+div[name^="Edit"]{
+  display: none !important;
+  }
+
+.app{
+background-color: transparent;
+}
+.tempDiV{
+display: none;
+}
+.description{
+font-size: 100px;
+}
+.button{
+font-size: 30px;
+}
+.label{
+font-size: 30px;
+}
+.row{
+font-size: 30px;
+}
+.ideacontainer{
+width: 100%;
+display: flex;
+font-weight : 500 ;
+font-size: 13px;
+word-break: break-word;
+background-color: lightgray;
+border-bottom: 1px solid darkgray;
+}
+.ideaTabs {
+width: 11%;
+display:  flex ;   
+border-bottom:  1px solid whitesmoke;
+text-align :  left ;  
+padding-top :  5px ;
+}
+
+.ideaTabsScore{
+ width: 9%;
+display:  flex ;   
+border-bottom:  1px solid whitesmoke;
+text-align :  left ;  
+padding-top :  5px ;
+}
+.ideaTabsGeo{
+  width: 5%;
+ display:  flex ;   
+ border-bottom:  1px solid whitesmoke;
+ text-align :  left ;  
+ padding-top :  5px ;
+ }
+.ideaRMDiv,.ideaIdeaIDDiv,.ideaNumberDiv, .ideaStatusDiv{
+  width: 10%;
+  display:  flex ;   
+  border-bottom:  1px solid whitesmoke;
+  text-align :  center ;  
+  padding-top :  5px ;
+  display: inherit;
+ }
+ .ideaGeoDiv,.ideaVoteDiv, .ideaViewDiv, .ideaCommentDiv{
+  width: 9%;
+  display:  flex ;   
+  border-bottom:  1px solid whitesmoke;
+  text-align :  center ;  
+  padding-top :  5px ;
+  display: inherit;
+ }
+.ideaTabsTitle, .ideaTitleDiv{
+width: 25%;
+border-bottom: 1px solid whitesmoke;
+text-align: left;
+padding-top : 5px;
+padding-left: 10px;
+
+}
+
+.ideaTabsID{
+  width: 10%;
+  border-bottom: 1px solid whitesmoke;
+  text-align: left;
+  padding-top : 5px;
+  padding-left: 10px;
+}
+.ideaTitleDiv{
+  position: relative;
+  display: inline-block;
+}
+.TitleHover, .voteHover{
+  position: relative;
+  display: inline-block;
+}
+.voteHover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ideaitemimage:hover{
+  cursor: pointer;
+}
+.TitleHover .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color:#9BD5EF;
+  color: black;
+  border-radius: 6px;
+  padding:10px; 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltipHeader{
+  width: 25%;
+  float: left;
+  flex: 1;
+  font-weight: bold;
+}
+.tooltipRow{
+  display: flex;
+  widows: 100%;
+  margin-top: 5px;
+}
+.tooltipdesc{
+  width: 75%;
+  float: right;
+ // display: inline;
+}
+.voteHover .voteduserDetails {
+  visibility: hidden;
+  width: 200px;
+  background-color:#9bd5ef;
+  color: black;
+  text-align: justify;
+  border-radius: 6px;
+  padding:10px; 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;  
+  height: 150px;
+  overflow: auto;
+}
+.TitleHover:hover .tooltiptext{
+visibility: visible;
+}
+.voteHover:hover .voteduserDetails{
+visibility: visible;
+}
+.ideaTabsDate,.ideaDateDiv{
+width: 10%;
+display:  inherit ;   
+border-bottom:  1px solid whitesmoke;
+text-align :  center ;  
+padding :  5px ;
+
+}
+.ideaTabsAuthor, .ideaTabsOrg, .ideaAuthorDiv, .ideaTeamsDiv, .ideaCoachDiv, .ideaOrgDiv,.idea.ItemID{
+width: 15%;
+display:  inherit ;   
+border-bottom:  1px solid whitesmoke;
+text-align :  left ;  
+padding :  5px ;
+
+}
+.ideaScoreDiv{
+  width: 10%;
+  display:  inherit ;   
+  border-bottom:  1px solid whitesmoke;
+  text-align :  Center ;  
+  padding :  5px ;
+}
+.ContentHeader{
+display: inline;
+}
+
+.Newides{
+display :   flex;
+font-size: 12px;
+}
+.currentLikesitemId, .currentcommentsitemId, .currentitemId, .currentitemOwner, .itemId{
+display: none;
+}
+.titleTextbox{
+font-family: 'Times New Roman', Times, serif;
+}
+.leadersControls, .Editcontrols, .timestampLabel{
+display: none;
+}
+.UserControls{
+pointer-events: visible;
+}
+a{
+text-decoration: none;
+color: #00a3e0;
+}
+a:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.Test{
+  text-transform: capitalize;
+}
+.loggedinuserGeo, .loggedinuserOrg, .loggedinuserId, .loggedinRMId,.loggedinuserEmail{
+text-transform: capitalize;
+display: none;
+}
+.viewedUsersDiv{
+display: block;
+}
+.ideaitemTitle {
+vertical-align: super;
+padding-top: 3px;
+}
+.ideaitemimage{
+padding-right:8px;
+}
+.Submitideaitemimage{
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+margin-top: 10px;
+}
+.submitcommentsButton, .submitLikeButton {
+background-color: #87BC40;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+margin-top: 10px;
+margin-left: 50%;
+}
+.submitcommentsButton1{
+  background-color: #87BC40;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 1px;
+  margin-left: 40%;
+  }
+  .ExportDataButton{
+  background-color: #87bc40;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px
+}
+.allComments{
+display: inline;
+word-break: break-word;
+}
+.submittedDate, .lastEditedDate{
+padding: 15px;
+}
+.sortImage{
+height: 14px;
+}
+.CheckBoxDiv{
+margin: 20px;
+}
+.InnovationpanelHeader{
+padding: 10px;
+}
+.votedIdea, .commentedIdea{
+background-color: #0696D7;
+border-radius: 50%;
+padding: 2px;
+}
+.searchResults{
+width: 100%;
+}
+.exportnewidea{
+  font-size: 16px;
+}
+.NewIdeaiframe{
+  display: none;
+}
+.ms-Nav-linkText{
+  display: none;
+}
+.FileControl, .existingFiles{
+  font: inherit;
+}
